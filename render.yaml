@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: rawlux-cr3-jpg
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: MAX_UPLOAD_MB
+        value: '250'
